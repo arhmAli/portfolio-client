@@ -54,6 +54,12 @@
     border: 1px solid black;
     border-radius: 10%;
   }
+  .profile-div{
+    position: absolute;
+    min-width: 100%;
+    margin-top: 70%;
+    /* margin-left: 5%; */
+  }
   @keyframes typing {
     from { width: 0 }
     to { width: 100% }

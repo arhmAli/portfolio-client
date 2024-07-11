@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import About from "./about";
 import './main.css'
+import Profile from "./Profile";
 export default function Home() {
   return (
     <div className="Parent-div-home">
@@ -16,7 +17,12 @@ export default function Home() {
         </div>
       </div>
       <About/>
+      <Profile/>
       <div className="home-page-links">
+      <Link href="/">
+        <span>Home</span>
+        </Link>
+      
         <Link href="/clock">
         <span>Clock Project</span>
         </Link>

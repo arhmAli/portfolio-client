@@ -2,9 +2,27 @@
 import { motion } from 'framer-motion';
 import Head from 'next/head';
 import Image from 'next/image';
+import Link from 'next/link';
+import '../main.css';
 
 export default function Page() {
   return (
+    <>
+    <div className="home-page-links">
+      <Link href="/">
+        <span>Home</span>
+        </Link>
+              
+        <Link href="/clock">
+        <span>Clock Project</span>
+        </Link>
+        <Link href="/therivet">
+        <span>the rivet Project</span>
+        </Link>
+        <Link href="/screwdriver">
+        <span>screwdriver Project</span>
+        </Link>
+      </div>
     <div className="min-h-screen bg-gray-100 p-5">
       <Head>
         <title>Trivet Project</title>
@@ -121,5 +139,6 @@ export default function Page() {
         </section>
       </main>
     </div>
+    </>
   );
 }

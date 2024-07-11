@@ -1,8 +1,25 @@
 "use client"
 import { motion } from 'framer-motion';
-
+import Link from 'next/link';
+import '../main.css';
 export default function Page() {
   return (
+    <>
+    <div className="home-page-links">
+    <Link href="/">
+        <span>Home</span>
+        </Link>
+      
+        <Link href="/clock">
+        <span>Clock Project</span>
+        </Link>
+        <Link href="/therivet">
+        <span>the rivet Project</span>
+        </Link>
+        <Link href="/screwdriver">
+        <span>screwdriver Project</span>
+        </Link>
+      </div>
     <div className="p-6 md:p-12 lg:p-20 bg-gray-50 min-h-screen">
       <motion.h1
         className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-center text-blue-600"
@@ -183,5 +200,6 @@ export default function Page() {
         />
       </section>
     </div>
+    </>
   );
 }
